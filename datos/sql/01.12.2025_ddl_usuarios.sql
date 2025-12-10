@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS usuarios(
+    id INTEGER AUTO_INCREMENT,
+    username VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    contrasena VARCHAR(255) NOT NULL,
+    sal VARCHAR(255) NOT NULL,
+    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT pk_usuarios PRIMARY KEY (id)
+);
